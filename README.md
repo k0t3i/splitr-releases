@@ -1,303 +1,122 @@
 <div align="center">
 
-# ✂️ SplitR
+# SplitR
 
-### Split. Process. Export. Done.
+**Fast, controlled media splitting and export — without the FFmpeg complexity.**
 
-**A simple desktop tool to process your media files without the complexity.**
+[![Latest Release](https://img.shields.io/github/v/release/k0t3i/splitr-releases?label=Latest&style=flat-square)](https://github.com/k0t3i/splitr-releases/releases/latest)
+[![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-0078D4?logo=windows&logoColor=white&style=flat-square)](https://github.com/k0t3i/splitr-releases/releases/latest)
+[![macOS](https://img.shields.io/badge/macOS-Intel%20%2F%20Apple%20Silicon-000000?logo=apple&logoColor=white&style=flat-square)](https://github.com/k0t3i/splitr-releases/releases/latest)
 
-🇫🇷 [Français](#-français) · 🇬🇧 [English](#-english)
-
-<br>
-
-[![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-0078D4?logo=windows&logoColor=white)](#windows)
-[![macOS](https://img.shields.io/badge/macOS-Intel%20%2F%20Apple%20Silicon-000000?logo=apple&logoColor=white)](#macos)
-[![Latest Release](https://img.shields.io/github/v/release/k0t3i/splitr-releases?label=Latest%20Release)](https://github.com/k0t3i/splitr-releases/releases/latest)
-
-<br>
-
-### 🚀 [Download the latest version](https://github.com/k0t3i/splitr-releases/releases/latest)
+### [Download the latest release](https://github.com/k0t3i/splitr-releases/releases/latest)
 
 </div>
 
 ---
 
-# 🇫🇷 Français
+## About SplitR
 
-## SplitR, simplement.
+SplitR is a desktop application for splitting, processing and exporting media files through a focused graphical interface.
 
-**SplitR est une application desktop conçue pour simplifier le traitement, le découpage et l’export de fichiers multimédia.**
+It is designed to keep common FFmpeg workflows simple, fast and repeatable — without requiring command-line usage.
 
-Pas de ligne de commande.  
-Pas de configuration compliquée.  
-Pas besoin de maîtriser FFmpeg.
-
-Vous sélectionnez vos fichiers, vous choisissez ce que vous voulez faire, **SplitR s’occupe du reste**.
-
-### ⚡ Pourquoi SplitR ?
-
-- ✂️ Découpez vos fichiers simplement
-- ⚙️ Automatisez les traitements répétitifs
-- 📂 Gérez vos fichiers depuis une interface claire
-- 🎯 Gardez le contrôle sur vos exports
-- 🖥️ Disponible sur **Windows et macOS**
+> **Release repository only.**  
+> This repository contains distributable builds and release notes. The SplitR source code is not published here.
 
 ---
 
-## ⬇️ Télécharger SplitR
+## Downloads
 
-La dernière version est toujours disponible ici :
+Choose the build that matches your system:
 
-### 👉 [Télécharger SplitR](https://github.com/k0t3i/splitr-releases/releases/latest)
+| Platform | Build |
+| --- | --- |
+| **Windows 10 / 11** | `.exe` |
+| **macOS — Apple Silicon** | `arm64.dmg` |
+| **macOS — Intel** | `x64.dmg` |
 
-Choisissez simplement la version correspondant à votre ordinateur.
+**Apple Silicon** includes Macs using Apple M-series chips (M1, M2, M3, M4 and later).
 
-| Système | Fichier |
-|---|---|
-| 🪟 Windows | `.exe` |
-| 🍎 Mac Apple Silicon — M1 / M2 / M3 / M4… | `arm64.dmg` |
-| 🍎 Mac Intel | `x64.dmg` |
-
-> **Vous ne savez pas quel Mac vous avez ?**  
-> Cliquez sur  → **À propos de ce Mac** et regardez la ligne **Puce** ou **Processeur**.
+[**View all releases →**](https://github.com/k0t3i/splitr-releases/releases)
 
 ---
 
-## 🛡️ Un avertissement de sécurité apparaît ?
+## Installation notice
 
-Pas d’inquiétude.
+Current SplitR builds are distributed without paid Apple or Microsoft code-signing certificates.
 
-SplitR est actuellement distribué directement via GitHub et **n’utilise pas encore les certificats de signature payants Apple et Microsoft**.
+Because of this, Windows SmartScreen or macOS Gatekeeper may display a security warning the first time you launch the application.
 
-Windows ou macOS peut donc afficher un avertissement lors du **premier lancement**.
+This is expected for unsigned builds downloaded outside the Microsoft Store or Mac App Store.
 
-Cela signifie que l’éditeur n’est pas encore identifié par un certificat reconnu par le système.
+### Windows
 
-### 🪟 Windows
-
-Windows peut afficher :
-
-> **Windows a protégé votre ordinateur**
-
-Pour lancer SplitR :
-
-1. Cliquez sur **Informations complémentaires**
-2. Vérifiez que l’application concernée est bien **SplitR**
-3. Cliquez sur **Exécuter quand même**
-
-✅ SplitR peut ensuite être utilisé normalement.
-
----
-
-### 🍎 macOS
-
-macOS peut afficher un message indiquant que SplitR ne peut pas être ouvert car le développeur n’est pas identifié.
-
-#### Méthode recommandée
-
-Essayez d’abord d’ouvrir SplitR normalement.
-
-Puis :
-
-1. Ouvrez **Réglages Système**
-2. Allez dans **Confidentialité et sécurité**
-3. Descendez jusqu’à la section **Sécurité**
-4. Repérez le message concernant **SplitR**
-5. Cliquez sur **Ouvrir quand même**
-6. Confirmez avec votre mot de passe ou Touch ID
-7. Lancez à nouveau SplitR
-
-✅ Cette autorisation n’est normalement nécessaire qu’une seule fois.
-
----
-
-### 🧰 macOS — si SplitR reste bloqué
-
-Pour les utilisateurs à l’aise avec le Terminal, une seconde solution est disponible.
-
-Placez d’abord SplitR dans le dossier **Applications**, puis ouvrez Terminal et exécutez :
-
-```bash
-xattr -dr com.apple.quarantine "/Applications/SplitR.app"
-```
-
-Relancez ensuite SplitR.
-
-Cette commande retire l’attribut de quarantaine ajouté par macOS à l’application téléchargée.
-
-> ⚠️ Utilisez cette commande uniquement pour une copie de SplitR téléchargée depuis ce dépôt GitHub officiel.
-
----
-
-## 🔐 Télécharger SplitR en toute sécurité
-
-Utilisez uniquement :
-
-### 👉 https://github.com/k0t3i/splitr-releases/releases
-
-Évitez les copies provenant de sites tiers, de plateformes de téléchargement ou de liens non vérifiés.
-
----
-
-## 🆘 Besoin d’aide ?
-
-Si SplitR ne démarre pas, ouvrez une issue :
-
-### 👉 [Signaler un problème](https://github.com/k0t3i/splitr-releases/issues)
-
-Indiquez si possible :
-
-- votre système : Windows ou macOS
-- sa version
-- la version de SplitR
-- sur Mac : Intel ou Apple Silicon
-- le message d’erreur affiché
-- une capture d’écran si nécessaire
-
----
-
-# 🇬🇧 English
-
-## SplitR, without the complexity.
-
-**SplitR is a desktop application designed to make media processing, splitting and exporting simple.**
-
-No command line.  
-No complicated setup.  
-No FFmpeg knowledge required.
-
-Select your files, choose what you want to do, and **let SplitR handle the rest**.
-
-### ⚡ Why SplitR?
-
-- ✂️ Split files easily
-- ⚙️ Automate repetitive processing
-- 📂 Manage files through a clean interface
-- 🎯 Stay in control of your exports
-- 🖥️ Available for **Windows and macOS**
-
----
-
-## ⬇️ Download SplitR
-
-The latest version is always available here:
-
-### 👉 [Download SplitR](https://github.com/k0t3i/splitr-releases/releases/latest)
-
-Choose the version matching your computer.
-
-| System | File |
-|---|---|
-| 🪟 Windows | `.exe` |
-| 🍎 Apple Silicon Mac — M1 / M2 / M3 / M4… | `arm64.dmg` |
-| 🍎 Intel Mac | `x64.dmg` |
-
-> **Not sure which Mac you have?**  
-> Click  → **About This Mac** and check the **Chip** or **Processor** field.
-
----
-
-## 🛡️ Seeing a security warning?
-
-Don't worry.
-
-SplitR is currently distributed directly through GitHub and **does not yet use Apple's or Microsoft's paid code-signing certificates**.
-
-As a result, Windows or macOS may display a security warning when SplitR is opened for the **first time**.
-
-This means that the publisher has not yet been identified through a certificate recognized by the operating system.
-
-### 🪟 Windows
-
-Windows may display:
-
-> **Windows protected your PC**
-
-To launch SplitR:
+If Windows displays **“Windows protected your PC”**:
 
 1. Click **More info**
-2. Make sure the application is **SplitR**
+2. Confirm the application is **SplitR**
 3. Click **Run anyway**
 
-✅ You can then use SplitR normally.
+### macOS
+
+If macOS prevents SplitR from opening:
+
+1. Try to open SplitR once
+2. Open **System Settings**
+3. Go to **Privacy & Security**
+4. Scroll to the **Security** section
+5. Find the SplitR warning
+6. Click **Open Anyway**
+7. Authenticate with your password or Touch ID
+8. Launch SplitR again
+
+This authorization is normally required only once.
 
 ---
 
-### 🍎 macOS
+## macOS — advanced troubleshooting
 
-macOS may prevent SplitR from opening because its developer cannot be verified.
-
-#### Recommended method
-
-Try opening SplitR once.
-
-Then:
-
-1. Open **System Settings**
-2. Go to **Privacy & Security**
-3. Scroll down to **Security**
-4. Find the message concerning **SplitR**
-5. Click **Open Anyway**
-6. Confirm using your password or Touch ID
-7. Launch SplitR again
-
-✅ This authorization should normally only be required once.
-
----
-
-### 🧰 macOS — if SplitR is still blocked
-
-Advanced users can also use Terminal.
-
-First move SplitR into your **Applications** folder.
-
-Then open Terminal and run:
+If Gatekeeper still blocks the application, move SplitR to your **Applications** folder, open Terminal and run:
 
 ```bash
 xattr -dr com.apple.quarantine "/Applications/SplitR.app"
 ```
 
-Launch SplitR again.
+Then launch SplitR again.
 
-This removes the macOS quarantine attribute associated with the downloaded application.
-
-> ⚠️ Only use this command with a copy of SplitR downloaded from this official GitHub repository.
+> Use this command only with a SplitR build downloaded from this official repository. It removes the macOS quarantine attribute from the application.
 
 ---
 
-## 🔐 Download SplitR safely
+## Official distribution
 
-Only download SplitR from:
+For security, download SplitR only from:
 
-### 👉 https://github.com/k0t3i/splitr-releases/releases
+**https://github.com/k0t3i/splitr-releases/releases**
 
-Avoid copies hosted on third-party download websites or unverified links.
+Do not install builds redistributed by third-party download sites or unverified links.
 
 ---
 
-## 🆘 Need help?
+## Support
 
-If SplitR does not start, open an issue:
+If SplitR does not launch or behaves unexpectedly, open an issue and include:
 
-### 👉 [Report a problem](https://github.com/k0t3i/splitr-releases/issues)
+- operating system and version
+- SplitR version
+- Mac architecture, if applicable: Intel or Apple Silicon
+- exact error message
+- screenshot, when useful
 
-Please include, when possible:
-
-- Windows or macOS
-- your operating system version
-- your SplitR version
-- Intel or Apple Silicon on Mac
-- the error message
-- a screenshot if relevant
+[**Open an issue →**](https://github.com/k0t3i/splitr-releases/issues)
 
 ---
 
 <div align="center">
 
-## ✂️ SplitR
+**SplitR**  
+Less setup. More control.
 
-**Less complexity. More control.**
-
-[Download](https://github.com/k0t3i/splitr-releases/releases/latest) · [Report an issue](https://github.com/k0t3i/splitr-releases/issues)
+[Download](https://github.com/k0t3i/splitr-releases/releases/latest) · [Releases](https://github.com/k0t3i/splitr-releases/releases) · [Support](https://github.com/k0t3i/splitr-releases/issues)
 
 </div>
