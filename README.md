@@ -2,7 +2,7 @@
 
 # SplitR
 
-**Fast, controlled media splitting and export — without the FFmpeg complexity.**
+**Fast, controlled media splitting and export, without the FFmpeg complexity.**
 
 [![Latest Release](https://img.shields.io/github/v/release/k0t3i/splitr-releases?label=Latest&style=flat-square)](https://github.com/k0t3i/splitr-releases/releases/latest)
 [![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-0078D4?logo=windows&logoColor=white&style=flat-square)](https://github.com/k0t3i/splitr-releases/releases/latest)
@@ -18,7 +18,7 @@
 
 SplitR is a desktop application for splitting, processing and exporting media files through a focused graphical interface.
 
-It is designed to keep common FFmpeg workflows simple, fast and repeatable — without requiring command-line usage.
+It is designed to keep common FFmpeg workflows simple, fast and repeatable, without requiring command-line usage.
 
 > **Release repository only.**  
 > This repository contains distributable builds and release notes. The SplitR source code is not published here.
@@ -32,8 +32,8 @@ Choose the build that matches your system:
 | Platform | Build |
 | --- | --- |
 | **Windows 10 / 11** | `.exe` |
-| **macOS — Apple Silicon** | `arm64.dmg` |
-| **macOS — Intel** | `x64.dmg` |
+| **macOS (Apple Silicon)** | `arm64.dmg` |
+| **macOS (Intel)** | `x64.dmg` |
 
 **Apple Silicon** includes Macs using Apple M-series chips (M1, M2, M3, M4 and later).
 
@@ -74,7 +74,7 @@ This authorization is normally required only once.
 
 ---
 
-## macOS — advanced troubleshooting
+## macOS: advanced troubleshooting
 
 If Gatekeeper still blocks the application, move SplitR to your **Applications** folder, open Terminal and run:
 
